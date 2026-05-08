@@ -773,6 +773,48 @@ footer {
 .activity-desc { font-size: 12.5px; }
 .philosophy-quote { min-height: 75px; }
 
+/* ── 툴 스트립 ── */
+.tools-strip {
+  margin-top: 40px;
+  padding-top: 32px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.tools-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.tools-group-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-3);
+  padding-right: 4px;
+  white-space: nowrap;
+}
+.tools-divider {
+  width: 1px;
+  height: 24px;
+  background: var(--border);
+  flex-shrink: 0;
+}
+.tool-chip {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text);
+  background: var(--surface-2);
+  border: 1px solid rgba(255,255,255,0.12);
+  padding: 5px 14px;
+  border-radius: 6px;
+  letter-spacing: -0.2px;
+}
+
 /* ── 반응형 ── */
 @media (max-width: 768px) {
   nav { padding: 0; }
@@ -932,6 +974,23 @@ footer {
       </div>
     </div>
 
+  </div>
+
+  <div class="tools-strip">
+    <div class="tools-group">
+      <span class="tools-group-label">편집</span>
+      <span class="tool-chip">Premiere Pro</span>
+      <span class="tool-chip">After Effects</span>
+      <span class="tool-chip">CapCut</span>
+      <span class="tool-chip">Photoshop</span>
+    </div>
+    <div class="tools-divider"></div>
+    <div class="tools-group">
+      <span class="tools-group-label">AI 제작</span>
+      <span class="tool-chip">Kling</span>
+      <span class="tool-chip">ChatGPT</span>
+      <span class="tool-chip">Gemini</span>
+    </div>
   </div>
 </section>
 
